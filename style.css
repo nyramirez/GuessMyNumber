@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 680px) {
   * {
     margin: 0;
     padding: 0;
@@ -120,7 +120,7 @@
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 679px) {
   * {
     margin: 0;
     padding: 0;
@@ -168,7 +168,7 @@
 
   /* ELEMENTS STYLE */
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -180,9 +180,9 @@
   .number {
     background: #eee;
     color: #333;
-    font-size: 5rem;
-    width: 15rem;
-    padding: 3rem 0rem;
+    font-size: 4rem;
+    width: 11rem;
+    padding: 2.5rem 0rem;
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -208,9 +208,9 @@
     border: 4px solid #eee;
     font-family: inherit;
     color: inherit;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 1.5rem;
-    width: 15rem;
+    width: 13rem;
     text-align: center;
     display: block;
     margin-bottom: 2rem;
@@ -220,7 +220,7 @@
     border: none;
     background-color: #eee;
     color: #222;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: inherit;
     padding: 2rem 3rem;
     cursor: pointer;
@@ -232,6 +232,133 @@
 
   .message {
     margin-bottom: 6rem;
+    height: 2rem;
+  }
+
+  .label-score {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+    /* background-color: #60b347; */
+  }
+
+  /* LAYOUT */
+  header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+  }
+
+  main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .left {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0rem;
+  }
+
+  .right {
+    width: 85%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0rem;
+  }
+
+  /* ELEMENTS STYLE */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .number {
+    background: #eee;
+    color: #333;
+    font-size: 3.7rem;
+    width: 9rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .between {
+    font-size: 1.15rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 40%;
+  }
+
+  .again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 3rem;
+    padding: 1.5rem;
+    width: 13rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #ccc;
+  }
+
+  .message {
+    margin-bottom: 3rem;
     height: 2rem;
   }
 
